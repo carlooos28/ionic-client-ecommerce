@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Descripción Producto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+
+        <ion-item>
+          <h2>{{productDetails.title}}</h2>
+          <p>{{productDetails.price}}</p>
+        </ion-item>
+      
+        <img src="{{productDetails.image_product}}">
+      
+        <ion-card-content>
+          <p>{{productDetails.description}}</p>
+          <p>{{productDetails.description}}</p>
+        </ion-card-content>
+      
+        <ion-row>
+          <ion-col>
+            <button ion-button full color="secondary" >Comprar :)</button>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>
+
+</ion-content>
