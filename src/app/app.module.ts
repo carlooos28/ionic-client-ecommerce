@@ -8,24 +8,23 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HttpModule } from '@angular/http';
 import { ProductProvider } from '../providers/api/product';
-import { ProductDetailPage } from '../pages/product-detail/product-detail';
+import { ProductDetailPageModule } from '../pages/product-detail/product-detail.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ProductDetailPage
+    HomePage
   ],
   imports: [
     HttpModule,
     BrowserModule,
+    ProductDetailPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ProductDetailPage
+    HomePage
   ],
   providers: [
     StatusBar,
